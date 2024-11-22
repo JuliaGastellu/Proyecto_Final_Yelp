@@ -17,7 +17,7 @@ smmap~=5.0.1
 streamlit~=1.38.0
 tenacity~=8.5.0
 toml~=0.10.2
-PyYAML>=6.0
+PyYAML>=5.0,<6.0
 setuptools>=60.0.0
 wheel
 google-cloud-storage~=2.4.0
