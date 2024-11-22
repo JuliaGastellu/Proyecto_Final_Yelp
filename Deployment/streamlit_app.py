@@ -35,7 +35,9 @@ modelo_bertopic = BERTopic(n_gram_range=(1, 2), language='english', vectorizer_m
 
 
 # credenciales 
-CREDENTIALS_PATH = '.streamlit/secrets.toml'
+CREDENTIALS_PATH = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"]
+)
 PROJECT_ID = "proyecto-final-439222"  
 
 # Autenticar el cliente
